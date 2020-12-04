@@ -1,3 +1,4 @@
 aoc
+________________________________________________________________________________
 
 Solutions to select Advent of Code questions
