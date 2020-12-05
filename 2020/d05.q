@@ -1,0 +1,13 @@
+a: read0 `:d05.txt;
+
+/ part one
+f: {(2 0N # x) y};
+rd: ("FB" ! 0 1);
+cd: ("LR" ! 0 1);
+l: {first (8 * (til 128) f/ rd 7 # x) + (til 8) f/ cd -3 # x} each a;
+p1: max l;
+
+/ part two
+p2: first ((first r) + 1 + til last deltas r: (min; max) @\: l) except l;
+
+show each (p1; p2);
