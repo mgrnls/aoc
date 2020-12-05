@@ -2,9 +2,7 @@ a: read0 `:d05.txt;
 
 / part one
 f: {(2 0N # x) y};
-rd: ("FB" ! 0 1);
-cd: ("LR" ! 0 1);
-l: {first (8 * (til 128) f/ rd 7 # x) + (til 8) f/ cd -3 # x} each a;
+l: {first (8 * (til 128) f/ "B" = 7 # x) + (til 8) f/ "R" = -3 # x} each a;
 p1: max l;
 
 / part two
