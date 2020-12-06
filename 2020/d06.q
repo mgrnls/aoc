@@ -1,4 +1,4 @@
-a: read0 `:d06.txt
+a: read0 `:d06.txt;
 
 / part one
 p1: count raze distinct each raze each l: (0 , where 0 = count each a) _ a;
