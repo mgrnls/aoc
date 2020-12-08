@@ -21,4 +21,4 @@ fpid: {(all s in .Q.n) and 9 = count s: string x};
 fd: `byr`iyr`eyr`hgt`hcl`ecl`pid ! (fbyr; fiyr; feyr; fhgt; fhcl; fecl; fpid);
 p2: sum {all (fd key x) @' value x} each d where b;
 
-show each (p1; p2);
+show (p1; p2);

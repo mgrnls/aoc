@@ -8,4 +8,4 @@ p1: max l;
 / part two
 p2: first ((first r) + 1 + til last deltas r: (min; max) @\: l) except l;
 
-show each (p1; p2);
+show (p1; p2);
