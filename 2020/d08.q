@@ -7,7 +7,7 @@ f: {[x]
   j: `jmp = first c i;
   n: `nop = first c i;
   (i + $[j; last c i; 1]; a + (not n) * (last c i) * not j) , l , i
-  }
+  };
 p1: ({not (first x) in 2 _ x} f/ 0 0) 1;
 
 / part two
