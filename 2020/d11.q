@@ -3,7 +3,7 @@ a: (".L#" ! 0N 0 1) read0 `:d11.txt;
 / part one
 s: (-1 0 1 cross -1 0 1) except enlist 0 0;
 c: (til h: count a) cross til w: count first a;
-d1: (t: {sum each (w; 1) */: x where (and/) (flip x) within' k: 0 ,' (h; w) - 1}) each c +/:\: s;
+d1: (t: {sum each (w; 1) */: x where (and/) (flip x) within' 0 ,' (h; w) - 1}) each c +/:\: s;
 f: {[x; y; z; u]
   if[(0 = count v) or any 0N = v: x y; : 0N];
   b: sum x u y;
