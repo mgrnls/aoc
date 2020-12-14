@@ -14,7 +14,6 @@ p1: sum abs (d f/ a) `p;
 
 / part two
 d: `p`w ! (0 0; 1 10);
-
 g: {[x; y]
   if["F" = y 0; x[`p]: (x `p) + (value 1 _ y) * x `w; : x];
   nw: (x `w) + (v: value 1 _ y) * c y 0;
