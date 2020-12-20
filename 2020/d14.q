@@ -22,7 +22,6 @@ f: {[x; y]
   xs: " = " vs y;
   p: value n where (n: first xs) in .Q.n;
   v: value last xs;
-  / same up to here.
   k: (x `mask) or raze string 28 _ 0b vs p;
   w: where "X" = b: x `mask;
   l: (cross/) (count w) # enlist "01";
