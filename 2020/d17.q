@@ -4,8 +4,9 @@ a: read0 `:d17.txt;
 ix: ((cross/) 3 # enlist -1 0 1) except enlist 0 0 0;
 fi: (raze (til count a) {x ,/: y}' where each "#" = a) ,' 0;
 f: {[x; y]
+  nx: `u # x;
   tc: distinct raze x +/:\: ix , enlist y # 0;
-  tc where (sum each (tc +/:\: ix) in\: x) in' (3; 2 3) tc in\: x
+  tc where (sum each (tc +/:\: ix) in\: nx) in' (3; 2 3) tc in\: nx
   };
 
 p1: count 6 f[ ; 3]/ fi;
