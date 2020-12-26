@@ -1,4 +1,3 @@
-a: read0 `:test.txt;
 a: read0 `:d17.txt;
 
 / part one
